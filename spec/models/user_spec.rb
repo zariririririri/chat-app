@@ -32,11 +32,8 @@ RSpec.describe User, type: :model do
           @user.password_confirmation = '123456'
           expect(@user).to be_valid
         end
-      end
-      context '新規登録できない場合' do
-  
-      
-  
+       
+        
         it 'passwordが5文字以下であれば登録できない' do
           @user.password = '12345'
           @user.password_confirmation = '12345'
